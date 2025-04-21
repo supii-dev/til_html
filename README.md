@@ -50,6 +50,12 @@
 
 ### 2.3. Live Server 셋팅(일부 실행 오류 발견됨)
 
+- 검색 > `시스템 환경 변수 편집` 입력 > 환경변수...
+- Adminstrator에 대한 사용자 변수
+  - path 내용 추가 : `C:\window\System32`
+- 시스템 변수
+  -path 내용 추가 : `C:\window\System32`
+
 - 파악 후 업데이트 예정
 
 # WAS (Wep Application Server)
@@ -268,9 +274,24 @@ git status
 
 - Git 에서 `파일 및 폴더 통째로 추적하기` 설정
 
-```dash
+```bash
 git add .
 ```
+
+- Git 작업내역 메모하기
+
+```bash
+git commit
+```
+
+- 새로운 작업단위, 즉 브랜치 생성하기
+
+```bash
+git branch header
+git switch header
+```
+
+- 월요일 할거지롱.
 
 ## 3. GitHub 관리
 
