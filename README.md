@@ -250,8 +250,8 @@ git config --global core.editor "code --wait"
 ### 1.6. 사용자 아이디 저장
 
 ```bash
-git config --global user.name "id"
-git config --global user.email "id@gmail.com"
+git config --global user.name "hwangsubin93"
+git config --global user.email "hwangsubin93@gmail.com"
 ```
 
 ```bash
