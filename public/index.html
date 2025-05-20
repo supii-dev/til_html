@@ -4,6 +4,13 @@
     <meta charset="UTF-8"/>
     <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
     <title>나의 til</title>
+    <!-- 외부라이브러리 -->
+    <link
+    rel="stylesheet"
+    href="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.css"
+  />
+  <script src="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.js"></script>
+
     <link rel="stylesheet" href="css/common.css">
     <link rel="stylesheet" href="css/header.css">
     <link rel="stylesheet" href="css/banner.css">
@@ -11,6 +18,7 @@
     <!-- js 초기코드 -->
      <script src="js/index.js"></script>
      <script src="js/header.js"></script>
+     <script src="js/banner.js"></script>
   </head>
   <body>
     <style>
@@ -30,7 +38,7 @@
               <div class="logo">
                 <a href="http://www.interpark.com" target="_blank">
                   <img 
-                    src="imagess/logo.svg" 
+                    src="images/logo.svg" 
                     alt="로고" 
                     title="인터파크"
                   />
@@ -72,7 +80,7 @@
                 <li>
                   <a href="#">
                   해외여행쿠폰
-                  <img src="imagess/badge_hot.svg" 
+                  <img src="images/badge_hot.svg" 
                   alt="해외여행쿠폰" 
                   title="해외여행쿠폰"
                   />
@@ -81,7 +89,7 @@
                 <li>
                   <a href="#">
                   국내여행쿠폰
-                  <img src="imagess/badge_hot.svg" 
+                  <img src="images/badge_hot.svg" 
                   alt="해외여행쿠폰" 
                   title="해외여행쿠폰"
                   />
@@ -99,23 +107,61 @@
         <div class="layout">
           <!-- banner -->
             <div class="banner">
-              <div class="banner_slide">
-              <div class="banner_list">
-                <a href="#">
-                  <img src="imagess/v1.png" alt="banner" title="배너"/>
-                </a>
+             <!-- 절대로 swiper 단어 고치지 않는다 -->
+            <div class="swiper sw_banner">
+              <div class="swiper-wrapper">
+                <div class="swiper-slide">
+                  <div class="banner_list">
+                    <a href="#">
+                      <img src="images/v1.png" alt="banner" title="배너" />
+                    </a>
+                  </div>
+                </div>
+                <div class="swiper-slide">
+                  <div class="banner_list">
+                    <a href="#">
+                      <img src="images/v1.png" alt="banner" title="배너" />
+                    </a>
+                  </div>
+                </div>
+                <div class="swiper-slide">
+                  <div class="banner_list">
+                    <a href="#">
+                      <img src="images/v1.png" alt="banner" title="배너" />
+                    </a>
+                  </div>
+                </div>
+                <div class="swiper-slide">
+                  <div class="banner_list">
+                    <a href="#">
+                      <img src="images/v1.png" alt="banner" title="배너" />
+                    </a>
+                  </div>
+                </div>
+                <div class="swiper-slide">
+                  <div class="banner_list">
+                    <a href="#">
+                      <img src="images/v1.png" alt="banner" title="배너" />
+                    </a>
+                  </div>
+                </div>
+                <div class="swiper-slide">
+                  <div class="banner_list">
+                    <a href="#">
+                      <img src="images/v1.png" alt="banner" title="배너" />
+                    </a>
+                  </div>
+                </div>
               </div>
-            <div class="banner_list">
-              <a href="#">
-                <img src="imagess/v2.jpg" alt="banner2" title="배너2"/>
-              </a>
+              <div class="swiper-pagination"></div>
             </div>
-          </div>
+                <div class="swiper-pagination"></div>
+              </div>
             <button class="slide_bt banner_left">
-              <img src="imagess/slider_arrow.svg" alt="left" title="left"
+              <img src="images/slider_arrow.svg" alt="left" title="left"
             </button>
             <button class="slide_bt banner_right">
-              <img src="imagess/slider_arrow.svg" alt="right" title="right"
+              <img src="images/slider_arrow.svg" alt="right" title="right"
             </button>
           </div>
           <!-- tour -->
@@ -141,7 +187,7 @@
                 <div class="item">
                   <a href="#">
                     <div class="item_image">
-                      <img src="imagess/v3.jpg" alt="나트랑" title="나트랑" />
+                      <img src="images/v3.jpg" alt="나트랑" title="나트랑" />
                     </div>
 
                     <span class="item_name">나트랑</span>
@@ -161,7 +207,7 @@
                 <div class="item">
                   <a href="#">
                     <div class="item_image">
-                      <img src="imagess/v3.jpg" alt="나트랑" title="나트랑" />
+                      <img src="images/v3.jpg" alt="나트랑" title="나트랑" />
                     </div>
 
                     <span class="item_name">나트랑</span>
@@ -181,7 +227,7 @@
                 <div class="item">
                   <a href="#">
                     <div class="item_image">
-                      <img src="imagess/v3.jpg" alt="나트랑" title="나트랑" />
+                      <img src="images/v3.jpg" alt="나트랑" title="나트랑" />
                     </div>
 
                     <span class="item_name">나트랑</span>
@@ -207,7 +253,7 @@
               <a href="#">
                 투어 홈 바로가기
                 <img 
-                src="imagess/icon_linkArrow.svg" 
+                src="images/icon_linkArrow.svg" 
                 alt="투어 홈 바로가기" 
                 title="투어 홈 바로가기"
               </a>
