@@ -2,9 +2,6 @@ window.addEventListener("load", function () {
   // 1.  데이터를 가져옮
   const dataUrl = "http://127.0.0.1:5500/public/api/banner.json";
 
-  const swBannerWrap = this.document.querySelector(
-    ".sw_banner .swiper-wrapper"
-  );
   /**
    * 데이터 연동
    * @param  _url string 주소
@@ -24,20 +21,23 @@ window.addEventListener("load", function () {
   const makeHtml = function (_data) {
     console.log(_data);
     // 2.  데이터를 해석해서 html 생성
+    const swBannerWrap = this.document.querySelector(
+      ".sw_banner .swiper-wrapper"
+    );
     // 완성시킬 html 글자
     let htmlTag = "";
     for (let i = 0; i < _data.length; i++) {
       const tempObj = _data[i];
 
       const tag = `
-      <div class="swiper-slide" id="${tempObj.id}">
-          <div class="banner_list">
-          <a href="${tempObj.url}">
-              <img src="${tempObj.img}" alt="${tempObj.alt}" title="${tempObj.alt}" />
-          </a>
-          </div>
-      </div>
-      `;
+    <div class="swiper-slide" id="${tempObj.id}">
+        <div class="banner_list">
+        <a href="${tempObj.url}">
+            <img src="${tempObj.img}" alt="${tempObj.alt}" title="${tempObj.alt}" />
+        </a>
+        </div>
+    </div>
+    `;
       htmlTag = htmlTag + tag;
     }
 

@@ -1,13 +1,14 @@
 @charset "utf-8";
-@import url("https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,100..900;1,100..900&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Noto+Sans:ital,wght@0,100..900;1,100..900&family=Roboto:ital,wght@0,100..900;1,100..900&display=swap");
 
 * {
-  margin: 0px;
-  padding: 0px;
+  margin: 0;
+  padding: 0;
   box-sizing: border-box;
   outline-style: none;
 }
-/* 태그선택: 추천하는 각 태그별 기본값 */
+
+/* 태그 선택 : 추천하는 각 태그별 기본값 */
 a {
   text-decoration: none;
   /* 디자인 보고 수정 */
@@ -21,30 +22,27 @@ html {
   /* 디자인 보고 수정 */
   font-size: 12px;
 }
+
 body {
   width: 100%;
   font-size: 1rem;
   /* 디자인 보고 수정 */
-  color: #000;
-  /* 글꼴을 필요로 함. */
+  color: #000000;
+  /* 글꼴이 필요로 함. */
   font-family: "Segoe UI", Roboto, Arial, "Noto Sans", sans-serif;
   letter-spacing: 0px;
   word-spacing: 0px;
 }
-
-/* -------여기까지는 복사해서 쓰면 좋다.------------*/
 .wrap {
   width: 100%;
 }
-
 .layout {
   max-width: 1280px;
   width: 100%;
-  margin: 0 auto;
 
+  margin: 0 auto;
   /* margin-top: 0;
   margin-bottom: 0;
   margin-left: auto;
-  margin-right: auto;*/
-  background-color: #fff;
+  margin-right: auto; */
 }

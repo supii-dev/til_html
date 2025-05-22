@@ -1,22 +1,24 @@
 .banner {
-  margin-top: 30px;
   position: relative;
+  margin-top: 30px;
 }
-
 .banner_slide {
   display: flex;
   gap: 25px;
+}
+.sw_banner {
+  border-radius: 15px;
 }
 
 .banner_list {
   border-radius: 15px;
   overflow: hidden;
 }
-/* 이미지가 영역에 가득 채워지고 비율이 유지되도록 처리 */
+/* 이미지가 영역에 가득 채워지고 비율이 유지되도록 처리  */
 .banner_list img {
   width: 100%;
   height: 100%;
-  /* 비율을 유지하면서 영역에 이미지 가득채우기 */
+  /* 비율을 유지하면서 영역에 이미지 가득 채우기 */
   object-fit: cover;
   display: block;
 }
@@ -33,8 +35,9 @@
   border: 1px solid #e6e6e6;
   background-color: rgba(255, 255, 255, 0.85);
   box-shadow: 0 0 8px rgba(0, 0, 0, 0.13);
-}
 
+  z-index: 100;
+}
 .banner_left {
   left: 0;
   transform: translateX(-50%) translateY(-50%) rotateY(180deg);
@@ -43,14 +46,3 @@
   right: 0;
   transform: translateX(50%) translateY(-50%);
 }
-
-/*
-.banner_left {
-  left: 0;
-  transform: translateX(-50%) translateY(-50);
-}
-.banner_right {
-  right: 0;
-  transform: translateX(50%) translateY(-50);
-}
-  */
