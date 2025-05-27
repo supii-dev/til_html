@@ -4,6 +4,10 @@
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>나의 til</title>
+    <link
+      rel="stylesheet"
+      href="https://necolas.github.io/normalize.css/8.0.1/normalize.css"
+    />
     <!-- 외부라이브러리 -->
     <link
       rel="stylesheet"
@@ -107,15 +111,12 @@
           <a href="#">투어</a>
           <a href="#">티켓</a>
         </div>
+
         <div class="m_header_search">
           <a href="#">
-            <img src="images/btn_search.svg" alt="제품검색"/>
+            <img src="images/btn_search.svg" alt="제품검색" />
           </a>
         </div>
-        
-        </div>
-
-        <div></div>
       </div>
 
       <!-- 메인 -->
@@ -129,6 +130,7 @@
                 <!-- API 연동 -->
               </div>
             </div>
+
             <div class="swiper-pagination sw_banner_pg"></div>
 
             <button class="slide_bt banner_prev slide_bt_left">
@@ -153,25 +155,31 @@
                 </ul>
               </div>
 
-              <div class="section_slide">
-                <!-- Swipe 투어 영역 -->
-                <div class="swiper sw_tour">
-                  <div class="swiper-wrapper">
-                    <!-- API 연동 -->
+              <div class="section_slide_wrap">
+                <div class="section_slide">
+                  <!-- Swipe 투어 영역 -->
+                  <div class="swiper sw_tour">
+                    <div class="swiper-wrapper">
+                      <!-- API 연동 -->
+                    </div>
                   </div>
+
+                  <button class="slide_bt tour_prev slide_bt_left">
+                    <img
+                      src="images/slider_arrow.svg"
+                      alt="left"
+                      title="left"
+                    />
+                  </button>
+
+                  <button class="slide_bt tour_next slide_bt_right">
+                    <img
+                      src="images/slider_arrow.svg"
+                      alt="right"
+                      title="right"
+                    />
+                  </button>
                 </div>
-
-                <button class="slide_bt tour_prev slide_bt_left">
-                  <img src="images/slider_arrow.svg" alt="left" title="left" />
-                </button>
-
-                <button class="slide_bt tour_next slide_bt_right">
-                  <img
-                    src="images/slider_arrow.svg"
-                    alt="right"
-                    title="right"
-                  />
-                </button>
               </div>
 
               <!--End 목록영역 -->

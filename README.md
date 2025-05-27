@@ -177,3 +177,84 @@ position : fixed 라고 셋팅하면 높이값이 반영이 안됩니다.
 
 - header 영역 css 작업
 - header 와 반응형 header를 분리해서 만들면 편하다.
+
+## 5. 자연스러운 반응형 계산법
+
+- 예제)
+  - PC 디자인 영역 너비가 1280px 이다
+  - 특정 영역의 너비가 650px, 높이가 400px
+  - 자연스러운 너비, 높이를 적용한다면?
+- 정리
+  - max-width: 650px, max-height: 400px
+  - `영역너비(650px) / 디자인 전체 영역 너비 (1280px) * 100 = 결과 vw`
+  - `영역너비(400px) / 디자인 전체 영역 너비 (1280px) * 100 = 결과 vw`
+
+```html
+<!-- 자연스러운 반응형 계산법 -->
+<div class="box_wrap">
+  <div class="box"></div>
+</div>
+```
+
+```css
+/* 자연스러운 반응형 계산법 */
+.box_wrap {
+  position: relative;
+  max-width: 1280px;
+  width: 100%;
+
+  background-color: hotpink;
+  margin: 0 auto;
+}
+.box {
+  position: relative;
+  max-width: 650px;
+  width: 50.78vw;
+  height: 400px;
+  height: 31.25vw;
+  background-color: yellowgreen;
+  margin: 0 auto;
+  /* 가운데로 두고잉 */
+}
+```
+
+## 6. 안내창 만들기
+
+```html
+<!-- 안내창 -->
+<div class="popup_wrap">
+  <div class="popup_content">내용</div>
+</div>
+<!-- 안내창 -->
+```
+
+```css
+/* 팝업창 */
+.popup_wrap {
+  position: fixed;
+  left: 0;
+  top: 0;
+  width: 100%;
+  /* 아래처럼 해도되요 */
+  height: 100vh;
+  background-color: rgba(0, 0, 0, 0.5);
+  z-index: 99999999;
+}
+.popup_content {
+  position: relative;
+  max-width: 650px;
+  width: 50.78vw;
+  height: 400px;
+  height: 31.25vw;
+  background-color: yellowgreen;
+  margin: 0 auto;
+  /* 가운데로 두고잉 */
+}
+```
+
+# SCSS 셋팅
+
+- VSCode에서 설치 : `Live Sass Compiler`
+- 실습
+  - css 폴더 / `test.scss 파일`생성
+  - VSCode 하단의 `watch Sass 를 클릭`함.
